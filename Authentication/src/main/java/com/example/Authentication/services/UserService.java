@@ -46,9 +46,7 @@ public class UserService {
     	return(foundUser.get());
     }
     
-    public void UpdateUser(User usertoUpdate) {
-    	userRepository.save(usertoUpdate);
-    }
+
     
     public boolean authenticate(String username, String password, User user) {
 		

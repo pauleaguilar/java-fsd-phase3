@@ -19,7 +19,7 @@ public class LoginController {
 	Logger logger = LoggerFactory.getLogger(LoginController.class);
 	
 	@Autowired
-	private UserService userService = new UserService();
+	private UserService userService;
 	
 	@GetMapping("/")
 	public String showGreeting(ModelMap map) {
